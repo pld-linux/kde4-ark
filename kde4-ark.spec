@@ -6,11 +6,11 @@
 Summary:	K Desktop Environment - archive manager
 Name:		kde4-ark
 Version:	4.8.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	b5d1f9105fa2196c3a755b9f12267ac2
+# Source0-md5:	e705235a81a198564c067bdfcb29ef10
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdebase-devel >= %{version}
 Requires:	kde4-kdebase-workspace >= %{version}
