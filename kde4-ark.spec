@@ -1,16 +1,16 @@
 #
 %define		_state		stable
 %define		orgname		ark
-%define		qtver		4.8.0
+%define		qtver		4.8.1
 
 Summary:	K Desktop Environment - archive manager
 Name:		kde4-ark
-Version:	4.8.2
+Version:	4.8.3
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	02f303761c006cb76788e61f1c7d265d
+# Source0-md5:	d6f6a3665cac5e9f4ce7999582e3f612
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdebase-devel >= %{version}
 Requires:	kde4-kdebase-workspace >= %{version}
