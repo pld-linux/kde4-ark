@@ -10,7 +10,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	cf438f95d83497cf39fe5e491f4792aa
+# Source0-md5:	5082c4154fc7e3afb10cd4b7264d0f1f
 URL:		http://www.kde.org/
 BuildRequires:	bzip2-devel
 BuildRequires:	kde4-kdebase-devel >= %{version}
