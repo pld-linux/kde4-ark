@@ -5,17 +5,19 @@
 
 Summary:	K Desktop Environment - archive manager
 Name:		kde4-ark
-Version:	4.9.0
-Release:	2
+Version:	4.9.1
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
 # Source0-md5:	cf438f95d83497cf39fe5e491f4792aa
 URL:		http://www.kde.org/
+BuildRequires:	bzip2-devel
 BuildRequires:	kde4-kdebase-devel >= %{version}
+BuildRequires:	libarchive-devel
+BuildRequires:	xz-devel
+BuildRequires:	zlib-devel
 Requires:	kde4-kdebase-workspace >= %{version}
-Requires:	kde4-kdebase-workspace >= %{version}
-Requires:	libarchive
 Requires:	libzip
 Obsoletes:	kde4-kdeutils-ark
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -58,6 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/kde4/kerfuffle_clilha.so
 %attr(755,root,root) %{_libdir}/kde4/kerfuffle_libarchive.so
 %attr(755,root,root) %{_libdir}/kde4/kerfuffle_libgz.so
+%attr(755,root,root) %{_libdir}/libkerfuffle.so
 %attr(755,root,root) %ghost %{_libdir}/libkerfuffle.so.?
 %attr(755,root,root) %{_libdir}/libkerfuffle.so.*.*.*
 %attr(755,root,root) %{_libdir}/kde4/kerfuffle_cli7z.so
@@ -83,5 +86,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kde4/services/ServiceMenus/ark_servicemenu.desktop
 %{_datadir}/config.kcfg/ark.kcfg
 %{_desktopdir}/kde4/ark.desktop
-%{_iconsdir}/hicolor/*x*/apps/ark.png
+%{_iconsdir}/hicolor/*/apps/ark.*
 %{_mandir}/man1/ark.1.*
