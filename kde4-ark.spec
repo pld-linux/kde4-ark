@@ -2,6 +2,7 @@
 %define		_state		stable
 %define		orgname		ark
 %define		qtver		4.8.1
+%define		kdeworkspacever	4.11.0
 
 Summary:	K Desktop Environment - archive manager
 Name:		kde4-ark
@@ -17,7 +18,7 @@ BuildRequires:	kde4-kdebase-devel >= %{version}
 BuildRequires:	libarchive-devel
 BuildRequires:	xz-devel
 BuildRequires:	zlib-devel
-Requires:	kde4-kdebase-workspace >= %{version}
+Requires:	kde4-kdebase-workspace >= %{kdeworkspacever}
 Requires:	libzip
 Obsoletes:	kde4-kdeutils-ark
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
