@@ -70,6 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/kde4/kerfuffle_libbz2.so
 %attr(755,root,root) %{_libdir}/kde4/kerfuffle_libxz.so
 %attr(755,root,root) %{_libdir}/kde4/libextracthere.so
+%{_datadir}/appdata/ark.appdata.xml
 %{_datadir}/apps/ark
 %{_datadir}/kde4/servicetypes/kerfufflePlugin.desktop
 %{_datadir}/kde4/services/ark_part.desktop
